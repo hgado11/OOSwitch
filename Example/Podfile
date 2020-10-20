@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OOSwitch_Example' do
+  pod 'OOSwitch', :path => '../'
+
+  target 'OOSwitch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
