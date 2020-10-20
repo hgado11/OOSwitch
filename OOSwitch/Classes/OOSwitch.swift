@@ -50,6 +50,7 @@ public class OOSwitch: UIControl {
     }
     @IBInspectable public var labelFont:UIFont = UIFont.boldSystemFont(ofSize: 12)
     @IBInspectable public var labelTextColor = UIColor.white
+    @IBInspectable public var imageCornerRadius: CGFloat = 0.0
 
     private var privateCornerRadius: CGFloat = 0.5 {
         didSet {
@@ -198,9 +199,9 @@ extension OOSwitch {
         self.thumbView.layer.shadowRadius = self.thumbShaddowRadius
         self.thumbView.layer.shadowOpacity = self.thumbShaddowOppacity
         self.thumbView.layer.shadowOffset = self.thumbShadowOffset
-
         self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
-
+        self.onImageView.layer.cornerRadius = self.imageCornerRadius
+        self.offImageView.layer.cornerRadius = self.imageCornerRadius
         self.addSubview(self.thumbView)
         self.addSubview(self.onImageView)
         self.addSubview(self.offImageView)
