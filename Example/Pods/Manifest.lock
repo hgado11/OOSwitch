@@ -1,5 +1,5 @@
 PODS:
-  - OOSwitch (0.1.0)
+  - OOSwitch (1.0.0)
 
 DEPENDENCIES:
   - OOSwitch (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OOSwitch: 9653a554aa81fdc69f1e75824da25b5bdb04dcd7
+  OOSwitch: e1e93ff9bf8eed7c122a2cca9307f92b2a72399a
 
 PODFILE CHECKSUM: 1589259f995ab64d13c8303f89eacf62c7f4eb0f
 
