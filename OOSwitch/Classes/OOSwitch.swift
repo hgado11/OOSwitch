@@ -193,15 +193,15 @@ extension OOSwitch {
         // configure thumb view
         self.thumbView.backgroundColor = self.thumbTintColor
         self.thumbView.isUserInteractionEnabled = false
-
+        self.thumbView.clipsToBounds = true
         // dodati kasnije
         self.thumbView.layer.shadowColor = self.thumbShadowColor.cgColor
         self.thumbView.layer.shadowRadius = self.thumbShaddowRadius
         self.thumbView.layer.shadowOpacity = self.thumbShaddowOppacity
         self.thumbView.layer.shadowOffset = self.thumbShadowOffset
         self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
-        self.onImageView.layer.cornerRadius = self.imageCornerRadius
-        self.offImageView.layer.cornerRadius = self.imageCornerRadius
+
+
         self.addSubview(self.thumbView)
         self.addSubview(self.onImageView)
         self.addSubview(self.offImageView)
@@ -314,6 +314,10 @@ extension OOSwitch {
 
             self.onImageView.frame.size = onOffImageSize
             self.offImageView.frame.size = onOffImageSize
+            self.onImageView.layer.cornerRadius = onOffImageSize.height * self.imageCornerRadius
+            self.offImageView.layer.cornerRadius = onOffImageSize.height * self.imageCornerRadius
+            self.onImageView.clipsToBounds = true
+            self.offImageView.clipsToBounds = true
 
             self.onImageView.center = CGPoint(x: self.onPoint.x + self.thumbView.frame.size.width / 2, y: self.thumbView.center.y)
             self.offImageView.center = CGPoint(x: self.offPoint.x + self.thumbView.frame.size.width / 2, y: self.thumbView.center.y)
