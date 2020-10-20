@@ -14,8 +14,8 @@
 		80E7189F35D606CFE0597E7A51609AEA /* OOSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A82263B9D97616A227E01DA10A6DB313 /* OOSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EC0A766EF15F013069C107121FA717 /* Pods-OOSwitch_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4DCC74E0F78E0DEEEF80CC76A73EEB /* Pods-OOSwitch_Example-dummy.m */; };
 		D4E8118CA4521646CEFD71D79449C668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D5C45F78253EF56100DCEA25 /* OOSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C45F77253EF56100DCEA25 /* OOSwitch.swift */; };
-		D5C45F80253EF5D200DCEA25 /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C45F7F253EF5D200DCEA25 /* ThumbView.swift */; };
+		D5C45F89253F00AB00DCEA25 /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C45F87253F00AB00DCEA25 /* ThumbView.swift */; };
+		D5C45F8A253F00AB00DCEA25 /* OOSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C45F88253F00AB00DCEA25 /* OOSwitch.swift */; };
 		F05B50A32B8F556A2776AB6DAD0B065B /* Pods-OOSwitch_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBF8EEBED59A3B37DFE378684BFBF085 /* Pods-OOSwitch_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4816E9791CBF117138E94CB186E7316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -65,8 +65,8 @@
 		CA4DCC74E0F78E0DEEEF80CC76A73EEB /* Pods-OOSwitch_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OOSwitch_Example-dummy.m"; sourceTree = "<group>"; };
 		CA564D9414DC331985EE47F8F163AB2F /* Pods-OOSwitch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OOSwitch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3FBDDEE4071EFAA4D6692A64CA0027C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D5C45F77253EF56100DCEA25 /* OOSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOSwitch.swift; sourceTree = "<group>"; };
-		D5C45F7F253EF5D200DCEA25 /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		D5C45F87253F00AB00DCEA25 /* ThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThumbView.swift; path = OOSwitch/Classes/ThumbView.swift; sourceTree = "<group>"; };
+		D5C45F88253F00AB00DCEA25 /* OOSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OOSwitch.swift; path = OOSwitch/Classes/OOSwitch.swift; sourceTree = "<group>"; };
 		E09F8A0A1E970B88F25CE6EF3B225D65 /* OOSwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OOSwitch-Info.plist"; sourceTree = "<group>"; };
 		E1C3B0DE795B296C45CFD5BD63689747 /* Pods-OOSwitch_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OOSwitch_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E8363517F0D2B3EEBED22154E816386E /* Pods-OOSwitch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OOSwitch_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 		0482E7C42429CE15932189434458CAD9 /* OOSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				D5C45F77253EF56100DCEA25 /* OOSwitch.swift */,
-				D5C45F7F253EF5D200DCEA25 /* ThumbView.swift */,
+				D5C45F88253F00AB00DCEA25 /* OOSwitch.swift */,
+				D5C45F87253F00AB00DCEA25 /* ThumbView.swift */,
 				9919E8E26C1CBC100BB6F9B43A350ED7 /* Pod */,
 				D291182EAFB2E8E4118F9C92E52F80BA /* Support Files */,
 			);
@@ -320,6 +320,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					AC4D50C92913AAF6347EE7A9B2FB39FD = {
+						LastSwiftMigration = 1200;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,9 +383,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C45F78253EF56100DCEA25 /* OOSwitch.swift in Sources */,
-				D5C45F80253EF5D200DCEA25 /* ThumbView.swift in Sources */,
+				D5C45F8A253F00AB00DCEA25 /* OOSwitch.swift in Sources */,
 				6823D1618D911DF441D0F0FB32E2922B /* OOSwitch-dummy.m in Sources */,
+				D5C45F89253F00AB00DCEA25 /* ThumbView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 312D1DA23F265BAAB3EC02894F18B7DC /* OOSwitch.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -669,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 980900CDB64CAE3CD9CE6C54AEC131A4 /* OOSwitch.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -689,6 +696,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
