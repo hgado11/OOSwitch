@@ -18,9 +18,6 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'OOSwitch is UISwitch customisable with Image and Labels '
-TODO: Add long description of the pod here.
-                       DESC
-
   s.homepage         = 'https://github.com/hgado11/OOSwitch'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
