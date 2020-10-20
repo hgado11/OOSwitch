@@ -1,6 +1,6 @@
 # OOSwitch
 
-[![CI Status](https://img.shields.io/travis/hgado11/OOSwitch.svg?style=flat)](https://travis-ci.org/hgado11/OOSwitch)
+
 [![Version](https://img.shields.io/cocoapods/v/OOSwitch.svg?style=flat)](https://cocoapods.org/pods/OOSwitch)
 [![License](https://img.shields.io/cocoapods/l/OOSwitch.svg?style=flat)](https://cocoapods.org/pods/OOSwitch)
 [![Platform](https://img.shields.io/cocoapods/p/OOSwitch.svg?style=flat)](https://cocoapods.org/pods/OOSwitch)
