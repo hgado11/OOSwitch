@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  OOSwitch
 //
-//  Created by hgado11 on 10/20/2020.
-//  Copyright (c) 2020 hgado11. All rights reserved.
+//  Created by Hassan Gado on 10/20/2020.
+//  Copyright (c) 2020 Hassan Gado. All rights reserved.
 //
 
 import UIKit

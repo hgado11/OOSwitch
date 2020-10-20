@@ -22,7 +22,7 @@ pod 'OOSwitch'
 
 ## Author
 
-hgado11, hgado11@gmail.com
+Hassan Gado, hgado11@gmail.com
 
 ## License
 
