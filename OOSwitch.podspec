@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'OOSwitch is UISwitch customisable with Image and Labels '
+  s.description      = 'OOSwitch is UISwitch customizable with Images for (ON/OFF) and Labels(ON/OFF) '
   s.homepage         = 'https://github.com/hgado11/OOSwitch'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hgado11' => 'hgado11@gmail.com' }
   s.source           = { :git => 'https://github.com/hgado11/OOSwitch.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.swift_versions = '4.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'OOSwitch/Classes/**/*'
