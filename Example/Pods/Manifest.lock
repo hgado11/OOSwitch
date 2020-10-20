@@ -1,0 +1,16 @@
+PODS:
+  - OOSwitch (0.1.0)
+
+DEPENDENCIES:
+  - OOSwitch (from `../`)
+
+EXTERNAL SOURCES:
+  OOSwitch:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OOSwitch: 9653a554aa81fdc69f1e75824da25b5bdb04dcd7
+
+PODFILE CHECKSUM: 1589259f995ab64d13c8303f89eacf62c7f4eb0f
+
+COCOAPODS: 1.9.3

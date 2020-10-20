@@ -1,0 +1,6 @@
+framework module Pods_OOSwitch_Example {
+  umbrella header "Pods-OOSwitch_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module OOSwitch {
+  umbrella header "OOSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}
