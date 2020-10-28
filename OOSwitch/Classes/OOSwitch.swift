@@ -48,7 +48,7 @@ public class OOSwitch: UIControl {
         }
 
     }
-    @IBInspectable public var labelFont:UIFont = UIFont.boldSystemFont(ofSize: 12)
+    @IBInspectable public var labelFont:UIFont?
     @IBInspectable public var labelTextColor = UIColor.white
     @IBInspectable public var imageCornerRadius: CGFloat = 0.0
 
@@ -347,8 +347,11 @@ extension OOSwitch {
         let labelWidth = self.bounds.width / 1.5  - self.padding * 2
         self.labelOn.frame = CGRect(x: 0, y: 0, width: labelWidth, height: self.frame.height)
         self.labelOff.frame = CGRect(x: self.frame.width - labelWidth, y: 0, width: labelWidth, height: self.frame.height)
-        self.labelOn.font = self.labelFont
-        self.labelOff.font = self.labelFont
+        if let font = self.labelFont{
+        self.labelOn.font = font
+            self.labelOff.font = font
+
+        }
         self.labelOn.textColor = self.labelTextColor
         self.labelOff.textColor = self.labelTextColor
 
