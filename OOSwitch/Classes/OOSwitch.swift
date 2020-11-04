@@ -255,8 +255,9 @@ extension OOSwitch {
     private func setupViewsOnAction() {
         self.thumbView.frame.origin.x = self.isOn ? self.onPoint.x : self.offPoint.x
         self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
-        self.setOnOffImageFrame()
 
+        self.setOnOffImageFrame()
+        self.setOnOffLabels()
     }
 
     private func completeAction() {
@@ -381,6 +382,13 @@ extension OOSwitch {
         self.offImageView.center.x = !self.isOn ? self.offPoint.x + self.thumbView.frame.size.width / 2 : 0
         self.onImageView.alpha = self.isOn ? 1.0 : 0.0
         self.offImageView.alpha = self.isOn ? 0.0 : 1.0
+    }
+
+    fileprivate func setOnOffLabels() {
+        guard self.areLabelsShown else {
+            return
+        }
+
         self.labelOn.alpha = self.isOn ? 1.0 : 0.0
         self.labelOff.alpha = self.isOn ? 0.0 : 1.0
     }
