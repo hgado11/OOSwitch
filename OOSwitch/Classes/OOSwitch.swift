@@ -181,7 +181,7 @@ public class OOSwitch: UIControl {
 }
 
 // MARK: Private methods
-extension OOSwitch {
+public extension OOSwitch {
 
     fileprivate func setupUI() {
 
@@ -224,7 +224,7 @@ extension OOSwitch {
         return true
     }
 
-    func setOn(on:Bool, animated:Bool) {
+    public func setOn(on:Bool, animated:Bool) {
 
         switch animated {
             case true:
